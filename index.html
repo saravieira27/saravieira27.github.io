@@ -388,6 +388,15 @@
 <script type="application/javascript">
 	 var email= document.getElementById("email");
 var nome= document.getElementById("name");
+	$(document).ready(function() {
+    $('#um-sendmsg').click(function() {
+        $('#um-sendmsg').attr('action',
+                       'mailto:sararvcatarina.20@gmil.com?subject=MensagemDoSite-' +
+                       $('#name').val() + '&body=' + $('#message').val()) + $('#email').val());
+        $('#um-sendmsg').submit();
+    });
+});
+	/*
 	$('#um-sendmsg').click(function() {
 $.ajax({
   type: "POST",
@@ -413,7 +422,7 @@ $.ajax({
  }).done(function(response) {
    console.log(response+" "+email+" nome "+nome); // if you're into that sorta thing
  });
-	});
+	});*/
 </script>
   </body>
 </html>
