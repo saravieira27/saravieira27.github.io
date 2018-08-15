@@ -100,7 +100,7 @@
                 <h4>skills</h4>
 				  <p><span class="um-skillbarr"></span>Coordination</p>
 				  <style>
-					  .um-skillbarr:after,.um-skillbarr:before{content:""; width:10px; height:3px; display:inline-block; margin-bottom:.3em;box-shadow:0 -1px 4px;color:#404040}
+					  .um-skillbarr:after,.um-skillbarr:before{content:""; width:1000px; height:3px; display:inline-block; margin-bottom:.3em;box-shadow:0 -1px 4px;color:#404040}
 					  .um-skillbarr:before{background-color:#5672d6;left:0}
 					  .um-skillbarr:after{background-color:#c6aef9;left:20px}
 					  
@@ -369,7 +369,7 @@
     <section class="um-section um-contact">                                           <!-- section CONTACT -->
       <article class="um-card card-contact um-clearfix scrolled">
         <i class="um-stripes"></i>
-        <form id="um-form" class="um-clearfix"  method="post" enctype="text/plain">
+        <form id="um-form" class="um-clearfix" action="https://postmail.invotes.com/send" method="post" enctype="text/plain">
           <legend>LET'S WORK TOGETHER</legend>
             <input type="text" id="name" name="name" required placeholder="Name">
             <input type="email" id="email" name="email" required placeholder="Email">
@@ -394,6 +394,7 @@ var nome= document.getElementById("name");
                        'mailto:sararvcatarina.20@gmil.com?subject=MensagemDoSite-' +
                        $('#name').val() + '&body=' + $('#message').val() + $('#email').val());
         $('#um-sendmsg').submit();
+		
     });
 });
 	/*
