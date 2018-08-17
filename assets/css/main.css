@@ -766,7 +766,7 @@ a {
   background: #404040; }
 
 .um-skills {
-  height:22em;
+  height:24em;
   cursor: pointer;
   -webkit-perspective: 1000px;
           perspective: 1000px;
@@ -833,6 +833,8 @@ a {
 
 .um-skill__front h4:first-of-type {
   margin: .7em 0 0 2.5em; }
+.um-skill__front h4 {
+  margin: .4em 0 0 2.5em; }
 
 .um-skill__front h4:last-of-type {
   margin: .4em 0 0 2.5em; }
